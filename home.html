@@ -14,19 +14,96 @@
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
+  <style type="text/css">
+      body {
+        background: #FDFDFD url(img/bg_main.gif) repeat;
+        padding-top: 0;
+      }
+
+      .custom_header {
+        width: 100%;
+        background: #000;
+        min-height: 60px;
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        margin: 0;
+        text-decoration: none;
+        color:#fff;
+        font-family:'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;
+        font-size:1.6em;
+        line-height: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        outline:0;
+        text-align: center;
+      }
+
+      .inner_wrapper {
+        padding-top: 20px;
+        background: #FFF;
+        border-bottom-color: rgb(75, 80, 86);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-left-color: rgb(75, 80, 86);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(75, 80, 86);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(75, 80, 86);
+        border-top-style: none;
+        border-top-width: 0px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+
+      }
+
+      .side_wrapper {
+        background: #FFF url(img/bg_post.png) left top repeat-x;
+        border-bottom-color: rgb(75, 80, 86);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-left-color: rgb(75, 80, 86);
+        border-left-style: none;
+        border-left-width: 0px;
+        border-right-color: rgb(75, 80, 86);
+        border-right-style: none;
+        border-right-width: 0px;
+        border-top-color: rgb(75, 80, 86);
+        border-top-style: none;
+        border-top-width: 0px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+      }
+
+      .img_box {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #CCC;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+      }
+
+      .user_img_box {
+        width:50px;
+        height:50px;
+      }
+
+      .user_box {
+        padding: 0;
+        margin:0;
+      }
+
+
+  </style>
+
 </head>
 <body>
 
   <!-- Header and Nav -->
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="panel">
-        <h1>Feed Template</h1>
-      </div>
-    </div>
+  
+  <div class="custom_header">
+      <h1 style="text-align: center;">DAIICT - Student Placement Cell</h1>
   </div>
-
   <!-- End Header and Nav -->
 
 
@@ -37,27 +114,18 @@
  <!-- Nav Sidebar -->
     <!-- This is source ordered to be pulled to the left on larger screens -->
     <div class="large-3 columns ">
-      <div class="panel">
-        <a href="#"><img src="http://placehold.it/300x240&text=[img]" /></a>
-        <h5><a href="#">Your Name</a></h5>
+      <div class="panel side_wrapper">
+        <a href="#"><img src="http://resourcecentre.daiict.ac.in/images/DAIICT_Logo_Mar2012.jpg"/></a>
+        <h5 style="text-align:center;"><a href="#">DA-IICT</a></h5>
           <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
           <section class="section">
-            <h5 class="title"><a href="#">Section 1</a></h5>
+            <h5 class="title"><a href="#">Home</a></h5>
           </section>
           <section class="section">
-            <h5 class="title"><a href="#">Section 2</a></h5>
+            <h5 class="title"><a href="#">Profile</a></h5>
           </section>
           <section class="section">
-            <h5 class="title"><a href="#">Section 3</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 4</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 5</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#">Section 6</a></h5>
+            <h5 class="title"><a href="#">Webmail</a></h5>
           </section>
         </div>
 
@@ -66,27 +134,30 @@
     
     <!-- Main Feed -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="large-6 columns">
+    <div class="large-9 columns inner_wrapper">
 
       <!-- Feed Entry -->
       <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-2 columns small-3"><img src="img/deloitte.jpg" class="img_box"/></div>
         <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+          <p><strong>Deloitte:</strong> Description of company</br>Job Title: Business Analyst.</br>Package: 12 lpa.</p>
           <ul class="inline-list">
+            <li><a href="">Posted on 12th Jan</a></li>
             <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
           </ul>
-
 
           <h6>2 Comments</h6>
           <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+            <div class="large-2 columns small-3 user_box"><img src="img/user.png" class="img_box user_img_box"/>
+              <h7><a href="#">User1</a></h7>
+            </div>
+            <div class="large-10 columns"><p>This is a comment</p></div>
           </div>
           <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+            <div class="large-2 columns small-3 user_box"><img src="img/user.png" class="img_box user_img_box"/>
+              <h7><a href="#">User2</a></h7>
+            </div>
+            <div class="large-10 columns"><p>This is another comment</p></div>
           </div>
         </div>
       </div>
@@ -96,12 +167,12 @@
 
       <!-- Feed Entry -->
       <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-2 columns small-3"><img src="img/amazon.jpg" class="img_box"/></div>
         <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+          <p><strong>Amazon:</strong> Description of company</br>Job Title: Software Engineer.</br>Package: 12 lpa.</p>
           <ul class="inline-list">
+            <li><a href="">Posted on 10th Jan</a></li>
             <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
           </ul>
         </div>
       </div>
@@ -111,32 +182,27 @@
 
       <!-- Feed Entry -->
       <div class="row">
-        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-2 columns small-3"><img src="img/tcs.jpg" class="img_box"/></div>
         <div class="large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+          <p><strong>Tata Consultancy Services:</strong> Description of company</br>Job Title: Business Analyst.</br>Package: 12 lpa.</p>
           <ul class="inline-list">
+            <li><a href="">Posted on 3rd Jan</a></li>
             <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
           </ul>
 
 
-          <h6>2 Comments</h6>
+          <h6>1 Comment</h6>
           <div class="row">
-            <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+            <div class="large-2 columns small-3 user_box"><img src="img/user.png" class="img_box user_img_box"/>
+              <h7><a href="#">User3</a></h7>
+            </div>
+            <div class="large-10 columns"><p>This is a comment</p></div>
           </div>
         </div>
       </div>
       <!-- End Feed Entry -->
 
     </div>
-
-    <!-- Right Sidebar -->
-    <!-- On small devices this column is hidden -->
-    <aside class="large-3 columns hide-for-small">
-      <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
-      <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
-    </aside>
 
   </div>
 
@@ -148,16 +214,13 @@
       <hr />
       <div class="row">
         <div class="large-5 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy; Copyright - SEN Group 9</p>
         </div>
         <div class="large-7 columns">
           <ul class="inline-list right">
-            <li><a href="#">Section 1</a></li>
-            <li><a href="#">Section 2</a></li>
-            <li><a href="#">Section 3</a></li>
-            <li><a href="#">Section 4</a></li>
-            <li><a href="#">Section 5</a></li>
-            <li><a href="#">Section 6</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
       </div>
