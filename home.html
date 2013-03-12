@@ -41,7 +41,7 @@
       }
 
       .inner_wrapper {
-        padding-top: 20px;
+        padding: 25px;
         background: #FFF;
         border-bottom-color: rgb(75, 80, 86);
         border-bottom-style: none;
@@ -76,16 +76,29 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
       }
 
-      .img_box {
+      .img_box1 {
         border-style: solid;
         border-width: 1px;
         border-color: #CCC;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
       }
 
+      .img_box {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #CCC;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+        width: 45px;
+        height: 45px;
+      }
+
       .user_img_box {
         width:50px;
-        height:50px;
+        min-height:75px;
+        padding:0;
+        margin:0;
+        clear:both;
+        float:left;
       }
 
       .user_box {
@@ -136,51 +149,133 @@
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="large-9 columns inner_wrapper">
 
-      <!-- Feed Entry -->
+      <!-- Event Entry -->
       <div class="row">
-        <div class="large-2 columns small-3"><img src="img/deloitte.jpg" class="img_box"/></div>
+        <div class="large-2 columns small-3"><img src="img/deloitte.jpg" class="img_box1"/></div>
         <div class="large-10 columns">
           <p><strong>Deloitte:</strong> Description of company</br>Job Title: Business Analyst.</br>Package: 12 lpa.</p>
           <ul class="inline-list">
             <li><a href="">Posted on 12th Jan</a></li>
-            <li><a href="">Reply</a></li>
+            <li><a href="">Ask a question</a></li>
           </ul>
-
-          <h6>2 Comments</h6>
-          <div class="row">
-            <div class="large-2 columns small-3 user_box"><img src="img/user.png" class="img_box user_img_box"/>
-              <h7><a href="#">User1</a></h7>
-            </div>
-            <div class="large-10 columns"><p>This is a comment</p></div>
-          </div>
-          <div class="row">
-            <div class="large-2 columns small-3 user_box"><img src="img/user.png" class="img_box user_img_box"/>
-              <h7><a href="#">User2</a></h7>
-            </div>
-            <div class="large-10 columns"><p>This is another comment</p></div>
-          </div>
         </div>
       </div>
-      <!-- End Feed Entry -->
-
+      <!-- End Event Entry --> 
+      </br>    
+      <h4>3 Questions</h4>
       <hr />
 
-      <!-- Feed Entry -->
+      
+      
       <div class="row">
-        <div class="large-2 columns small-3"><img src="img/amazon.jpg" class="img_box"/></div>
-        <div class="large-10 columns">
-          <p><strong>Amazon:</strong> Description of company</br>Job Title: Software Engineer.</br>Package: 12 lpa.</p>
+        <div class="large-12 columns">
+          <p><strong>Question 1:</strong> Is the internship mandatory?</p>
           <ul class="inline-list">
             <li><a href="">Posted on 10th Jan</a></li>
             <li><a href="">Reply</a></li>
           </ul>
         </div>
+        
+        <div class="large-11 columns">
+
+          <h6>2 Answers</h6>
+
+          <hr />
+
+          <div class="large-1 user_img_box"><img src="img/user.png" class="img_box"/>
+            <h7><a href="#">User3</a></h7>
+          </div>
+
+          <div class="large-11 columns">
+            <p>Unfortunately, yes!</p>
+          </div>
+
+          <hr />
+          
+          <div class="large-1 user_img_box"><img src="img/user.png" class="img_box"/>
+            <h7><a href="#">User3</a></h7>
+          </div>
+
+          <div class="large-11 columns">
+            <p>Yeah.. I think so :(</p>
+          </div>
+          
+        
+        </div>
+      
       </div>
-      <!-- End Feed Entry -->
+     
 
       <hr />
 
-      <!-- Feed Entry -->
+      <div class="row">
+        <div class="large-12 columns">
+          <p><strong>Question 2:</strong> Is registration open for MScIT?</p>
+          <ul class="inline-list">
+            <li><a href="">Posted on 10th Jan</a></li>
+            <li><a href="">Reply</a></li>
+          </ul>
+        </div>
+        
+        <div class="large-11 columns">
+
+          <h6>1 Answer</h6>
+
+          <hr />
+
+          <div class="large-1 user_img_box"><img src="img/user.png" class="img_box"/>
+            <h7><a href="#">User3</a></h7>
+          </div>
+
+          <div class="large-11 columns">
+            <p>No.</p>
+          </div>
+        
+        </div>
+      
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="large-12 columns">
+          <p><strong>Question 3:</strong> Is it A or B?</p>
+          <ul class="inline-list">
+            <li><a href="">Posted on 10th Jan</a></li>
+            <li><a href="">Reply</a></li>
+          </ul>
+        </div>
+        
+        <div class="large-11 columns">
+
+          <h6>2 Answers</h6>
+
+          <hr />
+
+          <div class="large-1 user_img_box"><img src="img/user.png" class="img_box"/>
+            <h7><a href="#">User2</a></h7>
+          </div>
+
+          <div class="large-11 columns">
+            <p>Not sure yet.</p>
+          </div>
+
+          <hr />
+          
+          <div class="large-1 user_img_box"><img src="img/user.png" class="img_box"/>
+            <h7><a href="#">User3</a></h7>
+          </div>
+
+          <div class="large-11 columns">
+            <p>Yeah.. I think its B :(</p>
+          </div>
+          
+        
+        </div>
+      
+      </div>
+
+      <!--
       <div class="row">
         <div class="large-2 columns small-3"><img src="img/tcs.jpg" class="img_box"/></div>
         <div class="large-10 columns">
@@ -200,8 +295,7 @@
           </div>
         </div>
       </div>
-      <!-- End Feed Entry -->
-
+      -->
     </div>
 
   </div>
