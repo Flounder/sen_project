@@ -22,6 +22,7 @@
 
       .custom_header {
         width: 100%;
+        min-width: 1000px;
         background: #000;
         min-height: 60px;
         margin-bottom: 15px;
@@ -106,6 +107,19 @@
         margin:0;
       }
 
+      .notification {
+        display: block;
+        border: 1px solid #888;
+        width: 25px;
+        height: 25px;
+        padding-left: 6px;
+        padding-top: 3px;
+        float: left;
+        color: #666;
+        background: #AAA;
+        margin-top: 18px;
+      }
+
 
   </style>
 
@@ -115,7 +129,12 @@
   <!-- Header and Nav -->
   
   <div class="custom_header">
-      <h1 style="text-align: center;">DAIICT - Student Placement Cell</h1>
+      <h1 style="text-align: center; float:left; margin-left:30%; max-width:90%;">DAIICT - Student Placement Cell</h1>
+      <div style="float:right; min-width:150px; height:60px; margin:0; padding:0;">
+        <div class="notification" title="Notifications">1</div>
+        <p style="float:left; margin:18px 25px; color:#CCC; "><a href="#">Logout</a></p>
+      </div>
+
   </div>
   <!-- End Header and Nav -->
 
@@ -128,7 +147,7 @@
     <!-- This is source ordered to be pulled to the left on larger screens -->
     <div class="large-3 columns ">
       <div class="panel side_wrapper">
-        <a href="#"><img src="http://resourcecentre.daiict.ac.in/images/DAIICT_Logo_Mar2012.jpg"/></a>
+        <a href="#"><img src="http://resourcecentre.daiict.ac.in/images/DAIICT_Logo_Mar2012.jpg" style="max_width:180px; max-height:180px;"/></a>
         <h5 style="text-align:center;"><a href="#">DA-IICT</a></h5>
           <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
           <section class="section">
